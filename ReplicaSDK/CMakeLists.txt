@@ -18,20 +18,18 @@ add_library(ptex SHARED
 )
 
 target_link_libraries(ptex
-                      ${Eigen_LIBRARIES}
+                      Eigen3::Eigen
                       ${Pangolin_LIBRARIES}
                       ${dl_LIBRARIES}
                       stdc++fs
 )
 target_include_directories(ptex PUBLIC
             ${Pangolin_INCLUDE_DIRS}
-            ${Eigen_INCLUDE_DIRS}
             ${dl_INCLUDE_DIRS}
             ${CMAKE_CURRENT_LIST_DIR}
 )
 
 include_directories(${Pangolin_INCLUDE_DIRS})
-include_directories(${EIGEN3_INCLUDE_DIR})
 include_directories(${dl_INCLUDE_DIRS})
 include_directories("./include")
 
