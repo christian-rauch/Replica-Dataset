@@ -21,7 +21,7 @@ seamlessly in that framework for AI agent training and other ML tasks.
 
 If you use the Replica dataset in your research directly or indirectly via derivative datasets or frameworks, please cite the following
 [technical report](https://arxiv.org/abs/1906.05797):
-```
+```bibtex
 @article{replica19arxiv,
   title =   {The {R}eplica Dataset: A Digital Replica of Indoor Spaces},
   author =  {Julian Straub and Thomas Whelan and Lingni Ma and Yufan Chen and Erik Wijmans and Simon Green and Jakob J. Engel and Raul Mur-Artal and Carl Ren and Shobhit Verma and Anton Clarkson and Mingfei Yan and Brian Budge and Yajie Yan and Xiaqing Pan and June Yon and Yuyang Zou and Kimberly Leon and Nigel Carter and Jesus Briales and  Tyler Gillingham and  Elias Mueggler and Luis Pesqueira and Manolis Savva and Dhruv Batra and Hauke M. Strasdat and Renzo De Nardi and Michael Goesele and Steven Lovegrove and Richard Newcombe },
