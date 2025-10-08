@@ -57,3 +57,5 @@ target_link_libraries(ReplicaRenderer
                       ptex
                       stdc++fs
 )
+
+install(TARGETS ptex ReplicaViewer ReplicaRenderer)
