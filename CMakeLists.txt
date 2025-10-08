@@ -14,7 +14,7 @@ if(NOT ${Eigen3_FOUND})
 endif()
 
 # use system Pangolin if available
-find_package(Pangolin)
+find_package(Pangolin 0.9)
 if(NOT ${Pangolin_FOUND})
     message(STATUS "Using 3rd party Pangolin")
     set(Pangolin_INCLUDE_DIRS "${THIRD_PARTY}/Pangolin/build/src/include")
