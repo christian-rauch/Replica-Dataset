@@ -77,14 +77,14 @@ The different files contain the following:
 
 ### Download on Mac OS and Linux
 Make sure `pigz`, `wget`, and `unzip` are installed:
-```
+```bash
 # on Mac OS
 brew install wget pigz unzip
 # on Ubuntu
 sudo apt-get install wget pigz unzip
 ```
 To download and decompress the dataset use the `download.sh` script:
-```
+```bash
 ./download.sh /path/to/replica_v1
 ```
 
@@ -97,7 +97,7 @@ Execute `win_download.bat` to download Replica.
 ### Setup
 After installing the dependencies of [Pangolin](https://github.com/stevenlovegrove/Pangolin),
 the Replica SDK can be compiled using the build script via
-```
+```bash
 git submodule update --init
 ./build.sh
 ```
@@ -110,7 +110,7 @@ to be installed. If you wish to use the headless renderer ensure you have the li
 
 ReplicaViewer is an interactive UI to explore the Replica Dataset. 
 
-```
+```bash
 ./build/bin/ReplicaViewer mesh.ply /path/to/atlases [mirrorFile]
 ```
 
@@ -125,7 +125,7 @@ The ReplicaRenderer shows how to render out images from a Replica for a
 programmatically defined trajectory without UI. This executable can be run
 headless on a server if so desired. 
 
-```
+```bash
 ./build/bin/ReplicaRenderer mesh.ply textures glass.sur
 ```
 
@@ -133,7 +133,7 @@ headless on a server if so desired.
 
 To use Replica within AI Habitat checkout the AI Habitat Sim at [https://github.com/facebookresearch/habitat-sim](https://github.com/facebookresearch/habitat-sim).
 After building the project you can launch the test viewer to verify that everything works:
-```
+```bash
 ./build/viewer --dataset /PATH/TO/REPLICA/replica.scene_dataset_config.json -- frl_apartment_0
 ```
 
