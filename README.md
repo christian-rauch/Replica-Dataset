@@ -11,7 +11,7 @@ See the [technical report](https://arxiv.org/abs/1906.05797) for more details.
 
 The Replica SDK contained in this repository allows visual inspection of the
 datasets via the ReplicaViewer and gives an example of how to render out images
-from the scenes headlessly via the ReplicaRenderer. 
+from the scenes headlessly via the ReplicaRenderer.
 
 For machine learning purposes each dataset also contains an export to the format
 employed by [AI Habitat](https://www.aihabitat.org/) and is therefore usable
@@ -42,14 +42,14 @@ Each Replica contains the following assets:
 ```
 ├── glass.sur
 ├── habitat
-    ├── mesh_semantic.ply 
+    ├── mesh_semantic.ply
     ├── mesh_semantic.navmesh
     ├── info_semantic.json
-    ├── mesh_preseg_semantic.ply 
+    ├── mesh_preseg_semantic.ply
     ├── mesh_preseg_semantic.navmesh
     ├── info_preseg_semantic.json
     ├── replica_stage.stage_config.json
-    └── sorted_faces.bin 
+    └── sorted_faces.bin
 ├── mesh.ply
 ├── preseg.bin
 ├── preseg.json
@@ -69,7 +69,7 @@ The different files contain the following:
 - `preseg.json` and `preseg.bin`: the presegmentation in terms of planes and non-planes of the scene.
 - `semantic.json` and `semantic.bin`: the semantic segmentation of the scene.
 - `textures`: the high resolution and high dynamic range textures of the scene.
-- `habitat/mesh*semantic.ply`: the quad meshes including semantic or presegmentation information for AI Habitat. 
+- `habitat/mesh*semantic.ply`: the quad meshes including semantic or presegmentation information for AI Habitat.
 - `habitat/info*semantic.json`: mapping from instance IDs in the respective `mesh_*.ply` to semantic names.
 - `habitat/mesh*semantic.navmesh`: navigation grid for AI Habitat.
 - `habitat/replica_stage.stage_config.json`: configuration file defining scene level parameters for habitat-sim.
@@ -108,7 +108,7 @@ to be installed. If you wish to use the headless renderer ensure you have the li
 
 ### ReplicaViewer
 
-ReplicaViewer is an interactive UI to explore the Replica Dataset. 
+ReplicaViewer is an interactive UI to explore the Replica Dataset.
 
 ```bash
 ./build/bin/ReplicaViewer mesh.ply /path/to/atlases [mirrorFile]
@@ -117,13 +117,13 @@ ReplicaViewer is an interactive UI to explore the Replica Dataset.
 ![ReplicaViewer](./assets/ReplicaViewer.png)
 
 The exposure value for rendering from the HDR textures can be adjusted on the
-top left. 
+top left.
 
 ### ReplicaRenderer
 
 The ReplicaRenderer shows how to render out images from a Replica for a
 programmatically defined trajectory without UI. This executable can be run
-headless on a server if so desired. 
+headless on a server if so desired.
 
 ```bash
 ./build/bin/ReplicaRenderer mesh.ply textures glass.sur
@@ -137,7 +137,7 @@ After building the project you can launch the test viewer to verify that everyth
 ./build/viewer --dataset /PATH/TO/REPLICA/replica.scene_dataset_config.json -- frl_apartment_0
 ```
 
-## Team 
+## Team
 
 Julian Straub,  Thomas Whelan, Lingni Ma, Yufan Chen, Erik Wijmans, Simon Green, Jakob J. Engel, Raul Mur-Artal, Carl Ren, Shobhit Verma, Anton Clarkson, Mingfei Yan, Brian Budge, Yajie Yan, Xiaqing Pan, June Yon, Yuyang Zou, Kimberly Leon, Nigel Carter, Jesus Briales,  Tyler Gillingham Elias Mueggler, Luis Pesqueira, Manolis Savva, Dhruv Batra, Hauke M. Strasdat, Renzo De Nardi, Michael Goesele, Steven Lovegrove, and Richard Newcombe.
 
