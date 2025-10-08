@@ -22,6 +22,7 @@ target_link_libraries(ptex
                       ${Pangolin_LIBRARIES}
                       ${dl_LIBRARIES}
                       stdc++fs
+                      X11
 )
 target_include_directories(ptex PUBLIC
             ${Pangolin_INCLUDE_DIRS}
